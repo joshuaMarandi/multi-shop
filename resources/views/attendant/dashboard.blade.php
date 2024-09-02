@@ -16,6 +16,9 @@
         
         <!-- Link to Add New Category -->
         <a class="btn btn-info mt-2" href="{{ route('categories.create') }}">Add New Category</a>
+
+        <!-- Link to Add New Order -->
+        <a class="btn btn-warning mt-2" href="{{ route('orders.create') }}">Add New Order</a>
     @endif
 @endauth
 

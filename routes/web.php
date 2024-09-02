@@ -94,4 +94,8 @@ Route::post('/attendant/products', [ProductController::class, 'store'])->name('a
 Route::resource('categories', CategoryController::class);
 
 
+Route::resource('orders', OrderController::class);
+Route::get('orders/{id}/invoice', [OrderController::class, 'generateInvoice'])->name('orders.generateInvoice');
 
+
+Route::resource('orders', OrderController::class);
